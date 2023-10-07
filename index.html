@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Check Your BMI</h1>
+        <h5>Enter your weight and height below to check your BMI results</h5>
+
+        <div class="form">
+            <form id="bmiForm">
+                <label>Put your weight in here (kg)</label>
+                <input id="weight" type="number" placeholder="0">
+                <label>And your height in here (cm)</label>
+                <input id="height" type="number" placeholder="0">
+
+                <button type="submit" id="submit">Check</button>
+            </form>
+            <div class="result"></div>
+        </div>
+    </div>
+
+    <!-- BMI Categories:
+            Underweight = <18.5
+            Normal weight = 18.5 – 24.9
+            Overweight = 25 – 29.9
+            Obesity = BMI of 30 or greater
+            -->
+    <script src="script.js"></script>
+</body>
+</html>
